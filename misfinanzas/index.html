@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/style.css">
+
+  <title>Mi economía doméstica</title>
+</head>
+
+<body>
+  <h1>Mi economía doméstica</h1>
+  <form id="transactionForm">
+    <div id="option">
+      <label>Tipo de transacción:</label>
+      <div>
+        <input id="ingreso" type="radio" name="transactionType" value="Ingreso">
+        <label for="ingreso">Ingreso</label>
+        <input id="egreso" type="radio" name="transactionType" value="Egreso">
+        <label for="egreso">Egreso</label>
+      </div>
+    </div>
+    <div>
+      <label for="transactionDescription">Descripción</label>
+      <input id="transactionDescription" name="transactionDescription" type="text">
+    </div>
+    <div>
+      <label for="transactionCategory">Categoría</label>
+      <input id="transactionCategory" name="transactionCategory" type="text">
+    </div>
+    <div>
+      <label for="transactionAmount">Monto</label>
+      <input id="transactionAmount" name="transactionAmount" type="number">
+    </div>
+
+    <button>Añadir</button>
+  </form>
+  <div class="table">
+    <table id="transactionTable">
+      <tr>
+        <th>Tipo</th>
+        <th>Descripción</th>
+        <th>Categoría</th>
+        <th>Monto</th>
+        <th>Eliminar</th>
+      </tr>
+
+    </table>
+  </div>
+</body>
+<script src="./resources/js/index.js"></script>
+
+</html>
